@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотограф Даниил Белозор</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="/photos/img.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .review-place {
+            max-width: 70%;
+            margin-left: 15%;
+            margin-top: -80px;
+            transform: translateY(240px);
+            opacity: 0;
+            animation: slideDn 1.3s cubic-bezier(.22, .9, .35, 1) forwards;
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+            padding-top: 10px;
+            padding-left: 35px;
+        }
+
+        .review-card {
+            background: #fff;
+            border: 1px solid #402a2a;
+            border-radius: 9px;
+            padding: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .review-card h3 {
+            margin: 0 0 8px;
+            font-size: 1.05rem;
+            color: #1c4635;
+        }
+
+        .review-card p {
+            margin: 0;
+            font-size: 0.96rem;
+            line-height: 1.5;
+            color: rgb(160, 142, 121);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="site-versions-container">
+        <button class="site-versions">Ru</button>
+        <a href="index-rv-en.html"><button class="site-versions-en">En</button></a>
+    </div>
+    <div class="fade">
+        <div class="menu">
+            <a href="index-rv.html"><img src="photos/img.png" alt="logo" width="75%"></a>
+            <br>
+            <br>
+            <a href="index.html" style="line-height: 0.6;">Главная</a>
+            <button class="contact-btn-site">
+                <p>Контакты</p>
+            </button>
+        </div>
+        <div class="main_place" style="filter: blur(4px);">
+            <h1 class="Head-text">Даниил Белозор</h1>
+            <p style="font-size: 19px;">Приветствую. Снимаю людей, архитектуру, стрит.</p>
+            <p style="font-size: 19px;">Сдаю фотографии быстро и в срок. Открыт к коммерческим и
+                некоммерческимпредложениям.</p>
+        </div>
+    </div>
+    <div class="link-tg">
+        <p style="font-size: 18px;"><a href="https://t.me/ph_dabelk" , style="text-decoration: none;" ,
+                target="_blank">Телеграм-канал(тык)</a></p>
+    </div>
+    <div class="review-place">
+        <h1 class="text">Отзывы</h1>
+        <div class="review-grid">
+            <div class="review-card">
+                <h3>Кирилл</h3>
+                <p>Очень классно справляется со своей задачей! Всегда с пониманием относится к техническому заданию!
+                    Отличная реализация в кротчайшие сроки! Может поддержать любую идею фотосессии, в пределах
+                    разумного. Восторг полный!</p>
+            </div>
+            <div class="review-card">
+                <h3>Александр</h3>
+                <p>Очень хороший экспириенс. Понимает что от него требуют. Все в точности так, как нужно. Отличный
+                    фотограф.</p>
+            </div>
+            <div class="review-card">
+                <h3>Егор</h3>
+                <p>Отличный фотограф!</p>
+            </div>
+            <div class="review-card">
+                <h3>Сергей</h3>
+                <p>Топ фотограф, талантливый</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <button class="contact-btn">
+            <img src="/photos/msg.png" alt="Связаться со мной">
+        </button>
+    </div>
+    <div class="contact-modal-overlay" id="contactOverlay" aria-hidden="true">
+        <div class="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+            <button class="contact-modal-close" aria-label="Close">×</button>
+            <img src="photos/img.png" alt="logo" width="30%" , style="justify-content: center; text-align: center;">
+            <br>
+            <h1 class="contactTitle" , style="line-height: 0.3;">Даниил Белозор</h1>
+            <h3 class="contactTitle" , style="line-height: 0.3; font-size: 22px;">Фотограф</h3>
+            <h3 class="contactTitle" , style="line-height: 0.2; font-size: 20px;">г. Мурманск</h3>
+            <br>
+            <div class="contact-modal-body">
+                <a href="https://t.me/dabelk_ph" target="_blank" rel="noopener" ,
+                    style="font-size: 28px;text-decoration: none;text-align: center;color: rgb(163, 140, 117);line-height: 1; ">Телеграм</a><br>
+                <a href="tel:+79537560000" ,
+                    style="font-size: 28px;text-decoration: none;text-align: center;color: rgb(163, 140, 117);">+7‑953‑756‑0000</a>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="carousel.js"></script>
+</body>
+
+</html>
