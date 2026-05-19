@@ -51,6 +51,12 @@ if (lightbox && lightboxImg) {
     if (startX - endX > 50 && nextBtn) nextBtn.click();
     if (endX - startX > 50 && prevBtn) prevBtn.click();
   });
+
+  document.addEventListener('keydown', e => {
+    if (lightbox.style.display !== 'flex') return;
+    if (e.key === 'ArrowRight' && nextBtn) nextBtn.click();
+    if (e.key === 'ArrowLeft' && prevBtn) prevBtn.click();
+  });
 }
 
 // Contact modal functionality

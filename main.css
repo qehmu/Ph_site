@@ -32,6 +32,17 @@ body {
   padding-left: -10px;
 }
 
+.logo {
+  width: 70%
+}
+
+@media (max-width:1020px) {
+  .logo {
+    max-height: 30vh;
+  }
+}
+
+
 .menu>a,
 .menu .contact-btn-site {
   display: block;
@@ -92,7 +103,7 @@ body {
   font-family: "Noto-sans", sans-serif;
   font-weight: 200;
   font-style: normal;
-  line-height: 0.6;
+  line-height: 1;
 }
 
 .footer-text {
@@ -445,7 +456,7 @@ body {
 
 .link-tg {
   position: relative;
-  top: -80px;
+  top: -60px;
   left: 78.5%;
   text-decoration: none;
   color: rgb(79, 137, 223);
@@ -463,7 +474,7 @@ body {
 
 .link-tg-rv {
   position: relative;
-  top: -80px;
+  top: -60px;
   left: 78.5%;
   text-decoration: none;
   color: rgb(79, 137, 223);
@@ -490,9 +501,9 @@ body {
     animation: none;
     float: none;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 8px;
+    flex-direction: column;
   }
 
   .menu>img {
