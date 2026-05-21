@@ -582,7 +582,7 @@ body {
   }
 
   .site-versions-container {
-    flex-direction: row;
+    flex-direction: column;
     position: fixed;
     top: 8px;
     right: 8px;
